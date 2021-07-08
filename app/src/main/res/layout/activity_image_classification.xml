@@ -17,7 +17,7 @@
         android:layout_marginEnd="104dp"
         android:textColor="#2C6A32"
         android:layout_marginBottom="105dp"
-        android:text="CHECK PLANT HEALTH"
+        android:text="@string/check_plant_health"
         android:textSize="20sp"
         android:textStyle="bold" />
 
