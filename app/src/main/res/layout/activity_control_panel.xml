@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundd"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ControlPanel">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="CONTROL PANEL"
+        android:textColor="#2C6A32"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/btnOpenWaterPump"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80sp"
+        android:background="#2C6A32"
+        android:padding="10dp"
+        android:text="@string/open_water_pump_for_30_sec_1_l"
+        android:textColor="@color/white"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/btnTurnLight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:background="#2C6A32"
+        android:padding="10dp"
+        android:text="@string/turn_light_on_off"
+
+        android:textColor="@color/white"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/btnTurnFan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:background="#2C6A32"
+        android:padding="10dp"
+        android:text="@string/turn_fan_on_off"
+        android:textColor="@color/white"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/btnTurnHeater"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:background="#2C6A32"
+        android:padding="10dp"
+        android:text="@string/turn_heater_on_off"
+        android:textColor="@color/white"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+    <Button
+        android:id="@+id/btnRunFullCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:padding="10dp"
+        android:text="@string/run_full_check_up_on_the_green_house_conditions" />
+</LinearLayout>

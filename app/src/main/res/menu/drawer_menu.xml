@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/main">
+        <menu>
+            <item
+                android:id="@+id/setUpWindow"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="@string/setup_window" />
+            <item
+                android:id="@+id/CheckSensorsValues"
+                android:icon="@drawable/ic_baseline_check_circle_24"
+                android:title="@string/check_sensors_values" />
+            <item
+                android:id="@+id/ControlPanel"
+                android:icon="@drawable/ic_baseline_construction_24"
+                android:title="@string/control_panel" />
+            <item
+                android:id="@+id/CheckPlantHealth"
+                android:icon="@drawable/ic_baseline_health_and_safety_24"
+                android:title="@string/check_plant_health" />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="@string/exit" />
+
+        </menu>
+    </item>
+</menu>
