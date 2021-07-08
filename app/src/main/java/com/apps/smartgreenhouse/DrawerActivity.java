@@ -71,6 +71,11 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 Intent intent = new Intent(getApplicationContext(), ImageClassificationActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.diseases_guide_tap:
+
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new DiseaseGuide()).commit();
+                break;
 
 
             case R.id.exit:

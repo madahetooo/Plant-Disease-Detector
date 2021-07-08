@@ -39,4 +39,9 @@
     <string name="press_back_button_to_return_to_the_main_menu">press back button to return to the main menu</string>
     <string name="check_light_status">Check Light Status</string>
     <string name="check_green_house_condition">Check Green House Conditions</string>
+    <string name="disease_important_links">Disease Important Links</string>
+    <string name="pacterial_leaf_spot">Pacterial Leaf Spot</string>
+    <string name="curling_leaves">Curling Leaves</string>
+    <string name="yellowing_leaves">Yellowing Leaves</string>
+    <string name="you_click_on_the_link">YOU CLICK ON THE LINK</string>
 </resources>

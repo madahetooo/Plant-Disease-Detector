@@ -15,6 +15,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartGreenHouse">
+        <activity android:name=".DiseaseGuide"></activity>
         <activity
             android:name=".ControlPanel"
             tools:ignore="Instantiatable" />
@@ -34,7 +35,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="org.eclipse.paho.android.service.MqttService"></service>
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
     </application>
 
 </manifest>

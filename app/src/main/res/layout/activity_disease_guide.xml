@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".DiseaseGuide">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:text="@string/you_click_on_the_link"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:autoLink="web"
+        android:linksClickable="true"
+        tools:ignore="SmallSp" />
+    <TextView
+        android:id="@+id/pacterial_leaf_spot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:text="@string/pacterial_leaf_spot"
+        android:textColor="#0940AE"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:autoLink="web"
+        android:linksClickable="true"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/curling_leaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:gravity="center"
+        android:text="@string/curling_leaves"
+        android:textColor="#0940AE"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/yellowing_leaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:text="@string/yellowing_leaves"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColor="#0940AE"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp" />
+
+
+</LinearLayout>

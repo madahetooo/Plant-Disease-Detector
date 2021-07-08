@@ -7,6 +7,8 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -62,6 +64,7 @@ public class ImageClassificationActivity extends AppCompatActivity {
         imageView = findViewById(R.id.image_to_be_classified);
         buclassify = findViewById(R.id.btn_classify);
         classitext = findViewById(R.id.classify_text);
+
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

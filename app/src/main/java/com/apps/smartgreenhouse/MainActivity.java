@@ -1,11 +1,13 @@
 package com.apps.smartgreenhouse;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,6 +28,7 @@ import org.eclipse.paho.android.service.MqttAndroidClient;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -161,31 +164,25 @@ public class MainActivity extends Fragment implements View.OnClickListener {
                 });
 
                 break;
-//            case R.id.btnPHLevel:
-//                lastQuery = databaseReference.child("ldr - readings").orderByKey().limitToLast(1);
-//                lastQuery.addValueEventListener(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//
-//                        Map<String, Object> map = (Map<String, Object>) snapshot.getValue();
-//                        for (String childKey: map.keySet()){
-//                            Map<String, Object> currentLubnaObject = (Map<String, Object>) map.get(childKey);
-//                            //You can access each variable like so: String variableName = (String) currentLubnaObject.get("INSERT_VARIABLE_HERE"); //data, description, taskid, time, title
-//                            Log.d(TAG, "Value is: " + currentLubnaObject);
-//                            tvPHLevel.setText("" + currentLubnaObject);
-//
-//                        }
-//
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//                        Toast.makeText(MainActivity.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
-//                        Log.w(TAG, "Failed to read value.", error.toException());
-//
-//                    }
-//                });
-//                break;
+            case R.id.btnPHLevel:
+                DatabaseReference phReadings = databaseReference.child("ph-readings");
+                Query phQuery = phReadings.orderByKey().limitToLast(1);
+                phQuery.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        List<String> phList = new ArrayList<String>();
+                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                            phList.add(postSnapshot.getValue().toString());
+                            tvPHLevel.setText("" + phList);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                    }
+
+                });
+                break;
             case R.id.btnMoisTure:
                 DatabaseReference moistureReadings = databaseReference.child("moisture-readings");
                 Query moistureReadingsQuery = moistureReadings.orderByKey().limitToLast(1);

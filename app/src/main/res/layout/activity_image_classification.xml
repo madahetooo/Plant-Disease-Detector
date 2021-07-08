@@ -53,14 +53,20 @@
         android:text="@string/classify"
         android:textColor="#fff" />
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_classify"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="17dp"
         android:text="@string/press_back_button_to_return_to_the_main_menu"
-        android:textSize="15sp"
         android:textColor="#8E8E8E"
+        android:textSize="15sp"
         android:textStyle="bold"
         tools:ignore="SmallSp" />
 </RelativeLayout>

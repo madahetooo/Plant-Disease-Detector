@@ -1,2 +1,4 @@
-0 Pepper,_bell___Bacterial_spot
-1 Pepper,_bell___healthy
+0 Curling Leaves
+1 Yellowing Leaves
+2 Bacterial Leaf Spot
+3 Healthy Bell Pepper
