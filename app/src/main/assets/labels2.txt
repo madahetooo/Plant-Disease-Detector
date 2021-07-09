@@ -1,0 +1,3 @@
+0 pepper green
+1 pepper red
+2 pepper yellow

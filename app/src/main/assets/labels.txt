@@ -1,4 +1,2 @@
-0 Curling Leaves
-1 Yellowing Leaves
-2 Bacterial Leaf Spot
-3 Healthy Bell Pepper
+Bacterial Leaf Spot
+Yellowing Leaf Curl

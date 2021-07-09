@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">SmartGreenHouse</string>
     <string name="capture_photo">Capture Photo</string>
-    <string name="from_gallary">From Gallary</string>
+    <string name="from_gallary">From Gallery</string>
     <string name="smoke">Smoke</string>
     <string name="dht11">Temp &amp; Humid</string>
     <string name="tank_level">Tank level</string>
     <string name="ph_level">PH Value</string>
     <string name="moisture">Moisture</string>
     <string name="ldr">LDR</string>
-    <string name="dht11_readings_will_appear_hear">dht11 readings will appear hear</string>
-    <string name="smoke_readings_will_appear_hear">Smoke readings will appear hear</string>
-    <string name="tank_level_will_appear_hear">Tank level readings will appear hear</string>
-    <string name="ph_level_will_appear_hear">PH Level readings will appear hear</string>
-    <string name="moisture_level_will_appear_hear">Moisture level readings will appear hear</string>
-    <string name="ldr_readings_iwll_appear_hear">LDR readings will appear hear</string>
+    <string name="dht11_readings_will_appear_hear">dht11 readings will appear here</string>
+    <string name="smoke_readings_will_appear_hear">Smoke readings will appear here</string>
+    <string name="tank_level_will_appear_hear">Tank level readings will appear here</string>
+    <string name="ph_level_will_appear_hear">PH Level readings will appear here</string>
+    <string name="moisture_level_will_appear_hear">Moisture level readings will appear here</string>
+    <string name="ldr_readings_iwll_appear_hear">LDR readings will appear here</string>
     <string name="go_to_image_classification">Go To Image Classification</string>
     <string name="click_below_to_select_a_image">Click below to select a Image</string>
     <string name="classify">Classify</string>
@@ -26,7 +26,7 @@
     <string name="control_panel">Control Panel</string>
     <string name="check_plant_health">Check Plant Health</string>
     <string name="setup_window">Setup Window</string>
-    <string name="open_water_bumb_for_30_sec">Open water bumb for 30 sec</string>
+    <string name="open_water_bumb_for_30_sec">Open water pump for 30 sec</string>
     <string name="open_water_pump_for_30_sec_1_l">Turn water pump ON/OFF (3 L / min)</string>
     <string name="turn_light_on_off">Turn Light On / OFF</string>
     <string name="turn_fan_on_off">Turn Fan On / OFF</string>
@@ -40,8 +40,11 @@
     <string name="check_light_status">Check Light Status</string>
     <string name="check_green_house_condition">Check Green House Conditions</string>
     <string name="disease_important_links">Disease Important Links</string>
-    <string name="pacterial_leaf_spot">Pacterial Leaf Spot</string>
+    <string name="pacterial_leaf_spot">bacterial Leaf Spot</string>
     <string name="curling_leaves">Curling Leaves</string>
     <string name="yellowing_leaves">Yellowing Leaves</string>
     <string name="you_click_on_the_link">YOU CLICK ON THE LINK</string>
+    <string name="color_classification">COLOR CLASSIFICATION</string>
+    <string name="check_plant_color">Check Plant Color</string>
+    <string name="smartgreenhouse_gmail_com">SmartGreenHouse@gmail.com</string>
 </resources>

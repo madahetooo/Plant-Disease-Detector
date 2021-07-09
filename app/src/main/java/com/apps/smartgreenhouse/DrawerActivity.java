@@ -71,6 +71,11 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 Intent intent = new Intent(getApplicationContext(), ImageClassificationActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.checkPlantColor:
+
+                Intent intent2 = new Intent(getApplicationContext(), ColorClassification.class);
+                startActivity(intent2);
+                break;
             case R.id.diseases_guide_tap:
 
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

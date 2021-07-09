@@ -11,17 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class SetupActivity extends Fragment implements AdapterView.OnItemSelectedListener {
     String[] timeZones = { "Africa/Cairo +02:00", "Europe/Berlin +02:00", "US/Arizona −05:00", "Australia/Sydney +11:00"};
     String[] plant = { "Bell Pepper", "Carrot", "Tomato"};
-
+    EditText etEmailAddress;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_setup, container, false);
         Spinner spinnerTimePicker = v.findViewById(R.id.spinnerTimePicker);
+        etEmailAddress = v.findViewById(R.id.etEmaillAddress);
 
 
 

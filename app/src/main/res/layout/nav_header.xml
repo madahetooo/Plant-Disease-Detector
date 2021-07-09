@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginTop="10dp"
-        android:text="Email Address"
+        android:text="@string/smartgreenhouse_gmail_com"
         android:textColor="@color/white"
         android:textSize="20sp" />
 

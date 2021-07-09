@@ -144,6 +144,10 @@ public class MainActivity extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.btnTankLevel:
+                client.publishWith()
+                        .topic("iot")
+                        .payload(UTF_8.encode("11"))
+                        .send();
                 DatabaseReference tankLevel = databaseReference.child("ultrasonic readings");
                 Query TankQuery = tankLevel.orderByKey().limitToLast(1);
                 TankQuery.addValueEventListener(new ValueEventListener() {

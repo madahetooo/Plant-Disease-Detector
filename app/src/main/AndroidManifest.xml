@@ -15,7 +15,8 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartGreenHouse">
-        <activity android:name=".DiseaseGuide"></activity>
+        <activity android:name=".ColorClassification"></activity>
+        <activity android:name=".DiseaseGuide" />
         <activity
             android:name=".ControlPanel"
             tools:ignore="Instantiatable" />
