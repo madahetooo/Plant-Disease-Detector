@@ -54,17 +54,14 @@ public class MainActivity extends Fragment implements View.OnClickListener {
 
         tvTempAndHumid = v.findViewById(R.id.tvTempAndHumid);
         tvTankLevel = v.findViewById(R.id.tvTankLevel);
-        tvPHLevel = v.findViewById(R.id.tvPHLevel);
         tvMoisture = v.findViewById(R.id.tvMoisture);
         tvLDR = v.findViewById(R.id.tvLDR);
         btnTempAndHumid = v.findViewById(R.id.btnTempAndHumid);
         btnTankLevel = v.findViewById(R.id.btnTankLevel);
-        btnPHLevel = v.findViewById(R.id.btnPHLevel);
         btnMoisTure = v.findViewById(R.id.btnMoisTure);
         btnLDR = v.findViewById(R.id.btnLDR);
         btnTempAndHumid.setOnClickListener(this);
         btnTankLevel.setOnClickListener(this);
-        btnPHLevel.setOnClickListener(this);
         btnMoisTure.setOnClickListener(this);
         btnLDR.setOnClickListener(this);
 
@@ -168,25 +165,7 @@ public class MainActivity extends Fragment implements View.OnClickListener {
                 });
 
                 break;
-            case R.id.btnPHLevel:
-                DatabaseReference phReadings = databaseReference.child("ph-readings");
-                Query phQuery = phReadings.orderByKey().limitToLast(1);
-                phQuery.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        List<String> phList = new ArrayList<String>();
-                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                            phList.add(postSnapshot.getValue().toString());
-                            tvPHLevel.setText("" + phList);
-                        }
-                    }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-                    }
-
-                });
-                break;
             case R.id.btnMoisTure:
                 DatabaseReference moistureReadings = databaseReference.child("moisture-readings");
                 Query moistureReadingsQuery = moistureReadings.orderByKey().limitToLast(1);

@@ -51,24 +51,7 @@
                 android:padding="10dp"
                 android:text="@string/tank_level" />
 
-            <TextView
-                android:id="@+id/tvPHLevel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="10dp"
-                android:textStyle="bold"
-                android:text="@string/ph_level_will_appear_hear"
-                android:textColor="#000"
-                android:textSize="15sp" />
-
-            <Button
-                android:id="@+id/btnPHLevel"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="@string/ph_level" />
+           
 
             <TextView
                 android:id="@+id/tvMoisture"

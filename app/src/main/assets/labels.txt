@@ -1,2 +1,4 @@
-Bacterial Leaf Spot
-Yellowing Leaf Curl
+0 Bacterial Leaf Spot
+1 Yellowing Leaf Curl
+2 Healthy Leaf
+3 Powdery Mildew
